@@ -42,7 +42,7 @@ aws ec2 describe-network-interfaces --filters Name=description,Values="ELB <ELB 
 
 This will give you all the private IPs of ILB, enter them when prompted. 
 
-Update the terraform.tfvars file in AWS_Workshop_Code_EventEngine folder with the ELB Private IP address.
+Update the terraform.tfvars file in AWS_Workshop folder with the ELB Private IP address.
 
 ### <ins> Step 2: Tapping in FMC </ins>
 
@@ -339,7 +339,10 @@ resource "fmc_ftd_deploy" "ftd" {
 
 ## <ins>Running the Terraform code</ins>
 
-In cloud9 IDE navigate to static folder `AWS_Workshop_Code_EventEngine` and ensure following files are available.
+> Note: You might have to wait upto 30 min, for FMC to be up and running.
+> Note: If there is an existing FMC up and running user can use that. Provide the public IP address of the FMC in the terraform.tfvars file in the AWS_Workshop folder. 
+
+In cloud9 IDE navigate to the `AWS_Workshop` folder and ensure following files are available.
 **fmc_config_terraform.tf**, **providers.tf**, **variables.tf** and **terraform.tfvars**
 
 Run the following commands:
