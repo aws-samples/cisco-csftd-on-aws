@@ -1,19 +1,22 @@
 ---
-title: "Cisco Secure Firewall on AWS Workshop"
-weight: 1
+title: "Deployment of Cisco Secure Firewall in AWS"
+weight: 10
 ---
 
-## Welcome
+Welcome to the Cisco Secure Firewall workshop on AWS. This workshop comprises of a series of labs that showcase the various usecases for Cisco Secure FTDv best practice deployment on AWS using terraform.
 
-In this lab, users will programmatically deploy Cisco Secure Firewall Threat Defence (FTD) and Firewall Management Center (FMC) using Infrastructure as Code (Terraform). The firewalls will be placed behind a network load balancer. User will also programmatically configure the firewalls once onboarded to ensure it allows required traffic flow from internet to the test machine setup in the AWS environment.
+## Lab1
 
-### Learning Objectives
+In this lab users will learn how to programmatically deploy Cisco Secure Firewall Threat Defence (FTD) and Firewall Management Center (FMC) using Infrastructure as Code (Terraform). You will also programmatically configure the firewalls once deployed to ensure it allows required traffic flow.
 
-1. Deploy Cisco Secure Firewall Threat Defence and Management Center using Terraform
-2. Enable N/S protection through Cisco Secure Firewall
+## Lab2
 
-### Lab Topology
+In this lab users will learn how to programmatically deploy Cisco Secure Firewall Threat Defence (FTD) as part of the target group of Gateway loadbalancer using Infrastructure as Code (Terraform). You will also programmatically configure the firewalls once deployed to ensure it allows required traffic flow.
 
-![Topology](/static/images/topology.png)
+Please proceed to completing the Prerequisites and getting started sections that are required to run either of the labs.
 
-> The examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various AWS and Cisco services can be architected to build a solution while demonstrating best practices along the way. These examples are not intended for use in production environments.
+If using AWS Event Engine:
+[AWS Event Engine](../10_Prerequisites/1_aws_event_engine.md)
+
+If using your own account:
+[AWS Account](../10_Prerequisites/2_aws_account.md)
