@@ -1,5 +1,5 @@
 ---
-title: "Create an AWS Account"
+title: "..in your own AWS Account"
 weight: 2
 ---
 
